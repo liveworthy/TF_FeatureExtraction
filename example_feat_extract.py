@@ -124,7 +124,7 @@ if __name__ == "__main__":
     parser.add_argument("--image_path", dest="image_path", type=str, required=True, help="path to directory containing images")
     parser.add_argument("--out_file", dest="out_file", type=str, default="./features.h5", help="path to save features (HDF5 file)")
     parser.add_argument("--layer_names", dest="layer_names", type=str, required=True, help="layer names separated by commas")
-    parser.add_argument("--preproc_func", dest="preproc_func", type=str, default=None, help="force the image preprocessing function (None)")
+    parser.add_argument("--preproc_func", dest="preproc_func", type=str, default=inception, help="force the image preprocessing function (None)")
     parser.add_argument("--preproc_threads", dest="num_preproc_threads", type=int, default=2, help="number of preprocessing threads (2)")
     parser.add_argument("--batch_size", dest="batch_size", type=int, default=64, help="batch size (32)")
     parser.add_argument("--num_classes", dest="num_classes", type=int, default=1001, help="number of classes (1001)")
